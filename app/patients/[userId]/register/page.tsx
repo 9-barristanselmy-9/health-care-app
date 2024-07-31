@@ -9,9 +9,9 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
 
   return (
     <div className="flex h-screen max-h-screen">
-      <section className="remove-scrollbar container my-auto">
+      <section className="remove-scrollbar container ">
         {/* OTP verification*/}
-        <div className="sub-container maw-w-[496px]">
+        <div className="sub-container maw-w-[860px] flex-1 flex-col py-10">
           <Image
             src="/assets/icons/logo-full.svg"
             alt="logo image"
@@ -20,13 +20,10 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
             className="mb-12 h-10 w-fit"
           />
           <RegisterForm user={user} />
-          <div className="text-14-regular mt-20 flex justify-between">
+          <div className="copyright py-12">
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2024 CarePluse
             </p>
-            <Link href="/?admin=true" className=" text-green-500">
-              Admin
-            </Link>
           </div>
         </div>
       </section>
